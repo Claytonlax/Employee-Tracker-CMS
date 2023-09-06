@@ -1,2 +1,8 @@
-insert into employees(id, first_name, last_name, title, department, salary, manager) values 
-(1, "Bob", "Smith", "Sales Assosciate", "Sales",100000,"Steve Robinson")
+use employees_db;
+
+insert into department (name) values 
+('John Smith');
+
+insert into role (title, salary, department_id) values ('Sales Assosciate', 80000, 1);
+
+insert into employees (first_name, last_name, role_id, manager_id) values ('John', 'Smith', 1, null);
